@@ -1,0 +1,90 @@
+@import url('../../../generic.css');
+
+.container{
+    min-height: 100vh;
+    max-width: 100vw;
+    /* margin:auto auto; */
+    /* border:5px solid black; */
+}
+.container .login{
+    min-height: 80vh;
+    max-width: 80vw;
+    margin:60px auto;
+    /* border:1px solid black; */
+    background-color: white;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0,0.5),
+    -2px -2px 2px 0 rgba(0, 0, 0,0.5);
+}
+.login .banner{
+    width:50%;
+    /* min-height:100%; */
+}
+.login .banner img{
+    width:100%;
+    min-height:100%;
+}
+.login .login-form{
+    width:50%;
+  /* border:5px solid brown; */
+    /* min-height:100%; */
+}
+.inner-form{
+height:100%;
+width:70%;
+    margin:0 auto;    
+/* border:1px solid black; */
+}
+.inner-form .title{
+    height:40%;
+    width:100%;
+    /* padding:50px 0;
+    border:2px solid white; */
+}
+.inner-form .title h1{
+    margin:50px 0;
+}
+.form-content form{
+    width:100%;
+}
+.inner-form .form-content{
+    height:40%;
+    width:100%;
+    /* border:2px solid yellow; */
+}
+.inner-form .other-requirement{
+    height:20%;
+    width:100%;
+    /* border:2px solid green; */
+}
+.form-content form .input-field input{
+    width:100%;
+    margin: 5px 0;
+    /* border:none; */
+    outline: none;
+/* border:2px solid gold; */
+}
+.input-field button{
+    float:right;
+    width:30%;
+    border:none;
+    cursor: pointer;
+    background-color:rgba(179, 55, 113,1.0);
+    color: rgba(252, 66, 123,1.0);
+
+}
+
+
+@media only screen and (max-width:500px){
+.login .login-form{
+    width:100%;
+    /* border:4px solid black; */
+    flex:1;
+}
+.login-form .inner-form{
+    /* max-width: 100%; */
+}
+    .login .banner{
+        width:0%;
+        display: none;
+    }
+}
